@@ -57,17 +57,11 @@ public class CartPage {
     @FindBy (xpath = "//span[@class='continue btn btn-default button exclusive-medium']")
     public  WebElement xIcon;
 
-   // @FindBy (xpath = "//span[@class='cross']")
-   // public  WebElement xIcon2;
-
     @FindBy (xpath = "//span[@title='Close window']")
     public  WebElement xIcon2;
 
     @FindBy (xpath = "//a[@href='http://automationpractice.com/index.php?controller=order']")
     public  WebElement cart;
-
-   // @FindBy (xpath = "//span[@id='total_price']")
-   // public WebElement totalPrice;
 
     @FindBy (xpath = "//a[@id='button_order_cart']")
     public  WebElement checkOutButton;
@@ -152,8 +146,4 @@ public class CartPage {
         return total = totalFirstItem+totalSecondItem+2;
 
     }
-
-
-
-
 }

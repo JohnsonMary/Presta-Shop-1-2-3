@@ -17,16 +17,6 @@ public class LoginLogout extends TestBase {
 
     @Test
     public void cartLoginTest () throws InterruptedException {
-    /*
-1. Open	browser
-2. Go	to	http://automationpractice.com/index.php
-3. Add	any	product	in	the	homepage	to	the	cart
-4. Hover	over	the	cart	icon
-5. Verify	that	cart	contains	the	product
-6. Login	as	any	valid	user
-7. Hover	over	the	cart	icon
-8. Verify that	cart	information	is	same	as	step	5
-     */
 
     l1.open();
     l1.product(ConfigurationReader.getProperty("productName1")).click();
@@ -38,18 +28,6 @@ public class LoginLogout extends TestBase {
     Assert.assertEquals(l1.product(ConfigurationReader.getProperty("productName1")).getText(),l1.productPlace.getText());
 
     }
-
-    /*
-1. Open	browser
-2. Go	to	http://automationpractice.com/index.php
-3. Login	as	any	valid	user
-4. Go	back	to	home	page
-5. Add	any	product	in	the	homepage	to	the	cart
-6. Hover	over	the	cart	icon
-7. Verify	that	cart	contains	the	product
-8. Log	out
-9. Verify	the	cart	contains the	word	empty
-     */
 
     @Test
     public void logoutTest() throws InterruptedException {

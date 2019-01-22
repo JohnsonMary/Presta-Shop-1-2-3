@@ -15,7 +15,7 @@ public class WONegativeLoginTests extends TestBase {
 
         driver.get(ConfigurationReader.getProperty("url"));
         a2.signIn.click();
-        a2.email.sendKeys("pinarercans@hotmail.com");
+        a2.email.sendKeys("pinarercans@gmail.com");
         a2.password.sendKeys("0000"+Keys.ENTER);
         String errorMessage = a2.errorMessage1.getText();
         Assert.assertEquals(errorMessage,"There is 1 error");

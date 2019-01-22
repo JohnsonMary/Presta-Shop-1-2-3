@@ -10,13 +10,7 @@ import org.testng.annotations.Test;
 public class ProductInformation extends TestBase {
 
     ProductPage productPage = new ProductPage();
-
-    /*
-    1. Go to http://automationpractice.com/index.php
-2. Click on any product
-3. Verify that same name and price displayed as on the home page
-     */
-
+    
     @Test(priority = 0)
     public void price() throws InterruptedException {
 
@@ -38,12 +32,6 @@ public class ProductInformation extends TestBase {
 
     }
 
-    /*
-    4. that default quantity is 1
-5. Verify that default size is S
-6. Verify that size options are S, M, L
-     */
-
     @Test(priority = 1)
     public void details() throws InterruptedException {
 
@@ -56,14 +44,6 @@ public class ProductInformation extends TestBase {
 
 
     }
-
-    /*
- 7. Click on Add to cart
-8. Verify confirmation message “Product successfully added to your shopping
-cart”
-9. that default quantity is 1
-         */
-
 
     @Test(priority = 2)
     public void addToCart() throws InterruptedException {

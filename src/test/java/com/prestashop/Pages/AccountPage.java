@@ -143,9 +143,7 @@ public class AccountPage {
        return cityName;
    }
 
-   // @FindBy (xpath = "//span[.='Mary Johnson']")
-   //    public  WebElement fullName;
-
+  
     public WebElement fullName(String fullName){
 
         String xpath = "//span[.='"+fullName+"']";

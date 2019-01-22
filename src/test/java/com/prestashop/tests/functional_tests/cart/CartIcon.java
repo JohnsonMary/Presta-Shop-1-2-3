@@ -10,16 +10,6 @@ public class CartIcon extends TestBase {
 
     CartIconPage cart1 = new CartIconPage();
 
-    /*
-1. Open	browser
-2. Go	to	http://automationpractice.com/index.php
-3. Add	any	product	in	the	homepage	to	the	cart
-4. Click	on	Continue	shopping
-5. Hover	over	the	cart	icon
-6. Click	the	x	to	delete	the	product
-7. Verify	word	empty is	displayed	in	the	Cart	icon
- */
-
     @Test
     public void iconDeleteTest() throws InterruptedException {
 
@@ -39,20 +29,6 @@ public class CartIcon extends TestBase {
 
 
     }
-
-    /*
-    1. Open	browser
-2. Go	to	http://automationpractice.com/index.php
-3. Add	any	product	in	the	homepage	to	the	cart
-4. Click	on	Continue	shopping
-5. Add	another	product	in	the	homepage	to	the	cart
-6. Click	on	Proceed	to	checkout
-7. Verify	message	Your	shopping	cart	contains:	2	Products
-8. Click	the	delete	icon	to	delete	one	of	the	products
-9. Verify	message	Your	shopping	cart	contains:	1	Product
-10.Click	the	delete	icon	to	delete	the	second	product
-11. Verify message Your shopping cart is empty.
-     */
 
     @Test
     public void checkoutDeleteTest() throws InterruptedException {

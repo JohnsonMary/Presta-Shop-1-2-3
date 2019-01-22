@@ -17,7 +17,7 @@ public class PositiveLoginTests extends TestBase {
         driver.get(ConfigurationReader.getProperty("url"));
         a1.signIn.click();
         a1.email.sendKeys("pinarercans@hotmail.com");
-        a1.password.sendKeys("12345");
+        a1.password.sendKeys("00000");
         a1.signInSubmitButton.click();
         Assert.assertTrue(Driver.getDriver().getTitle().contains("My account"));
 

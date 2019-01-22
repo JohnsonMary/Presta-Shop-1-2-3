@@ -7,15 +7,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-/*
-2. Go to http://automationpractice.com/index.php
-3. Click Sign in link
-4. Enter new valid email to the email field
-5. Click on Create Account
-6. Fill all the required steps except for first name
-7. Click on Register
-8. Verify that error message firstname is required. is displayed
-c */
 public class ErrorMessageValidation extends TestBase {
     AccountPage a1 = new AccountPage();
     Select list;
@@ -36,13 +27,13 @@ public class ErrorMessageValidation extends TestBase {
         Thread.sleep(2000);
 
 
-        a1.streetCreate.sendKeys("10 Rogers Pl.");
-        a1.cityCreate.sendKeys("Bloomfield");
+        a1.streetCreate.sendKeys("12 Clifton ave.");
+        a1.cityCreate.sendKeys("Clifton");
 
         Select state = new Select(a1.stateCreate);
         state.selectByVisibleText("New Jersey");
 
-        a1.postCode.sendKeys("07003");
+        a1.postCode.sendKeys("07045");
 
         list = new Select(a1.countryCreate);
         list.selectByIndex(1);
